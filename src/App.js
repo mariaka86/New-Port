@@ -1,24 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
-
+import Header from '../src/components/Header'
+import AppBar from '../src/components/AppBar'
+import AboutMe from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+
+   <main className="text-gray-400 bg-gray-900 body-font">
+        <AppBar/>
+        <Header/> 
+         <AboutMe/>
+        <Projects/>
+        <Contact/>
+        {/* <Skills/>
+        <Footer/>  */} 
+
+        
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/mariaka86?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          My Github
         </a>
-      </header>
-    </div>
+        </main>
+     
+  
+
+
   );
 }
 
