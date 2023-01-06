@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Header from '../src/components/Header'
-import AppBar from '../src/components/AppBar'
+import Header from './components/Header'
+import AppBar from './components/AppBar'
 import AboutMe from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -16,16 +16,6 @@ function App() {
         <Contact/>
         {/* <Skills/>
         <Footer/>  */} 
-
-        
-        <a
-          className="App-link"
-          href="https://github.com/mariaka86?tab=repositories"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          My Github
-        </a>
         </main>
      
   

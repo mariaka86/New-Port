@@ -5,12 +5,6 @@
 
 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,14 +29,15 @@ a:link {
 
 
 body{
-  background-color: bisque;
+  background-color: beige;
 }
 
-.Cards{
+.card {
+  margin: 20px;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  margin: 15px;
 }
+
 

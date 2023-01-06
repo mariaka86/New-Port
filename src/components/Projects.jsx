@@ -2,7 +2,9 @@
 import React from "react";
 import Card from '@mui/material/Card';
 import { projects } from "../data";
-import { CardContent, CardMedia, Typography } from "@mui/material";
+import { CardContent, CardMedia, Typography,Box } from "@mui/material";
+import Grid from '@mui/material/Grid';
+
 
 export default function Projects() {
   return (
@@ -25,29 +27,34 @@ export default function Projects() {
               href={project.link}
               key={project.image}
               className="sm:w-1/2 w-100 p-4">
-              <div className="Cards">
-                
-                <Card sx={{ maxWidth: 345 }} className="px-8 py-10 relative z-10 w-full border-4 ">
-                
-                  <CardContent className="title-font text-lg font-medium text-white mb-3">  
-                  <CardMedia
-                  component="img"
-                  alt="projects"
-                  className="projectPic"
-                  image={project.image}
-                  height="140"
-                />
-                  <Typography gutterBottom variant="h4" component="div">
-                    {project.title}
-                    </Typography>
-             
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                    {project.subtitle}
-                  </h2>
-                  <Typography variant="body2" color="text.secondary">{project.description}</Typography>
-                  </CardContent>
-                </Card>
-              </div>
+
+<Grid container spacing={2}>
+<Grid item xs={5}>
+  <Box>
+                  <div className="card">
+                    <Card sx={{ maxWidth: 345 }} className="px-8 py-10 relative z-10 w-full border-4 ">
+                      <CardContent className="title-font text-lg font-medium text-white mb-3">
+                        <CardMedia
+                          component="img"
+                          alt="projects"
+                          className="projectPic"
+                          image={project.image}
+                          height="140"
+                        />
+                        <Typography gutterBottom variant="h4" component="div">
+                          {project.title}
+                        </Typography>
+
+                        <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                          {project.subtitle}
+                        </h2>
+                        <Typography variant="body2" color="text.secondary">{project.description}</Typography>
+                      </CardContent>
+                    </Card>
+                  </div>
+                  </Box>
+                  </Grid>
+                  </Grid>
             </a>
           ))}
         </div>
