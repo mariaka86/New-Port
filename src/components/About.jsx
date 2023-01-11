@@ -3,13 +3,13 @@ export default function AboutMe() {
       <section id="about">
         <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
               Hi, I'm Mary.
               <br className="hidden lg:inline-block" />I love to build amazing
               apps.
-            </h1>
+            </h2>
             <p className="mb-8 leading-relaxed">
-            My name is Mary Kariuki, I'm currently a software development student. Before I got into studying coding I worked in the healthcare field as a medical assistant; I'm transitioning into the tech field, it’s been an interest of mine for a long time
+            My name is Mary Kariuki, I'm currently a full-stack software developer with a background in healthcare.<br/> I'm transitioning into the tech field, and currently looking for my first tech oriented role
             </p>
             <div className="aboutLinks">
               <a
@@ -28,7 +28,7 @@ export default function AboutMe() {
             <img
               className="object-cover object-center rounded"
               alt="hero"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa_lPZMLRPPu0YG2-6ITpIuKHa03Wts2uBrA&usqp=CAU"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDBywaFQG6HrXIiWXKjtBAfS4jxN6VRZYCjA&usqp=CAU"
             />
           </div>
         </div>

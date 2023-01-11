@@ -13,7 +13,7 @@ export default function ButtonAppBar() {
     <>
     <Box sx={{ flexGrow: 1 }}>
       <AppBar title ="Portfolio" style={{backgroundColor:"black" }}>
-        <Toolbar variant = "dense"position="fixed">
+        <Toolbar variant = "dense">
           <IconButton
             size="large"
             edge="start"

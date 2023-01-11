@@ -2,7 +2,7 @@
 import React from "react";
 import Card from '@mui/material/Card';
 import { projects } from "../data";
-import { CardContent, CardMedia, Typography,Box } from "@mui/material";
+import { CardContent, CardMedia, Typography, Box } from "@mui/material";
 import Grid from '@mui/material/Grid';
 
 
@@ -21,25 +21,23 @@ export default function Projects() {
             fuga dolore.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="row">
           {projects.map((project) => (
             <a
               href={project.link}
               key={project.image}
               className="sm:w-1/2 w-100 p-4">
-
-<Grid container spacing={2}>
-<Grid item xs={5}>
-  <Box>
-                  <div className="card">
-                    <Card sx={{ maxWidth: 345 }} className="px-8 py-10 relative z-10 w-full border-4 ">
-                      <CardContent className="title-font text-lg font-medium text-white mb-3">
+             
+                <div class="column">
+                  <div class="cards">
+                    <Card sx={{ maxWidth:400}} className="px-8 py-10 relative z-10 w-full border-4 ">
+                      <CardContent className="cardcontent">
                         <CardMedia
                           component="img"
                           alt="projects"
                           className="projectPic"
                           image={project.image}
-                          height="140"
+                          height="140" 
                         />
                         <Typography gutterBottom variant="h4" component="div">
                           {project.title}
@@ -51,10 +49,8 @@ export default function Projects() {
                         <Typography variant="body2" color="text.secondary">{project.description}</Typography>
                       </CardContent>
                     </Card>
-                  </div>
-                  </Box>
-                  </Grid>
-                  </Grid>
+                </div>
+              </div>
             </a>
           ))}
         </div>

@@ -19,7 +19,7 @@ export const projects = [
       title: "Library Of Things",
       subtitle: "React and Supabase",
       description:
-        "Find items in your community from real people. Share your own items that you think someone else may find useful. Or just use it to share your interests and meet new people.",
+        " Share your own items that you think someone else may find useful. Or just use it to share your interests and meet new people.",
       image: "images/LOT.png",
       link: "https://library-of-things.vercel.app/",
     },
